@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.h2-mayor {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #e6483c;
+}
+
+.h2-menor {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#section-barberos {
+    padding: 30px 0px;
+}
+
+.barberos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0px;
+    margin-bottom: 80px;
+}
+
+.barbero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nombre-barbero {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+}
+
+.button {
+    font-family: Bebas Neue;
+    font-weight: 0;
+    font-size: 24px;
+    color: #e6483c;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition: 600ms;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+
+    transition: 600ms;
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #2b2b2b;
+
+}
+
+.barbero .button {
+    color: #ffffff;
+    background-color: #e6483c;
+    padding: 10px 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.barbero .button:hover {
+    transform: scale(1.1);
+    color: rgb(41, 41, 41);
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.copy {
+    text-align: center;
+}
+
+.section-contacto {
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .barberos-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .barbero{
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding-bottom: 0px;
+    }
+
+    h2 {
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .copy {
+        font-size: 15px;
+    }
+}
